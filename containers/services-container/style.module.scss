@@ -1,0 +1,27 @@
+.servicesSection{
+    width: 100%;
+    height: 608px;
+    background: #F6F8F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    & h1{
+        color: #292E3D;
+        text-align: center;
+
+        /* Heading/4 */
+        font-family: var(--workSans);
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    &__services{
+        display: grid;
+        grid-template-columns: repeat(3, auto);   
+        row-gap: 3rem;
+        column-gap: 6rem;
+    }
+}

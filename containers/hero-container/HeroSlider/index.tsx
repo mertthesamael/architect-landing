@@ -4,10 +4,6 @@ import React, { FC, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
-  Pagination,
-  Scrollbar,
-  Autoplay,
-  EffectFade,
 } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -31,8 +27,8 @@ const HeroSlider: FC<HeroSliderProps> = ({}) => {
         swiperRef.current = swiper;
       }}
     >
-        {Projects.map((el) => 
-        <SwiperSlide className={styles.heroSlider__slide}>
+        {Projects.map((el, _i) => 
+        <SwiperSlide key={_i} className={styles.heroSlider__slide}>
             <h1>{el.title}</h1>
             <p>{el.content}</p>
         </SwiperSlide>

@@ -1,0 +1,32 @@
+.reasonCard{
+
+    display: flex;
+    width: 350px;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 4px;
+    gap:25px;
+    border: 1.4px solid var(--neutral-100, #E0E3EB);
+    background: #FFF;
+    & h2{
+
+        color:  #3D445C;
+        font-family:var(--workSans);
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    & p{
+        color: #858EAD;
+
+        /* Caption */
+        font-family: var(--workSans);
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
