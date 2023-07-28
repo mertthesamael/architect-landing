@@ -1,0 +1,60 @@
+@use "../../style/variables.scss" as *;
+.projectsSection{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    &__inner{
+        width: $page-format;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: center;
+        &__title{
+            position: relative;
+            bottom: 3rem;
+            color: var(--neutral-800, #292E3D);
+
+            /* Heading/4 */
+            font-family: var(--workSans);
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        &__body{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__slider{
+            width: 50rem;
+            height: max-content;
+            position: relative;
+        }
+
+        &__filter{
+            width: max-content;
+            height: max-content;
+            height: 100%;
+            & ul{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                font-family: var(--workSans);
+                & li{
+                    color: var(--neutral-200, #C2C7D6);
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    cursor: pointer;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,11 @@
 import AboutSection from '@/containers/about-container'
+import BannerSection from '@/containers/banner-container'
+import BannerContainer from '@/containers/banner-container'
 import HeroSection from '@/containers/hero-container'
+import ProjectsSection from '@/containers/projects-container'
 import ReasonsSection from '@/containers/reasons-container'
 import ServicesSection from '@/containers/services-container'
+import StatsSection from '@/containers/stats-container'
 
 export default function Home() {
 
@@ -11,8 +15,11 @@ export default function Home() {
    <main>
     <HeroSection />
     <ReasonsSection />
-    <AboutSection/>
+    <AboutSection />
     <ServicesSection/>
-   </main>
+    <StatsSection />
+    <BannerSection />
+    <ProjectsSection />
+   </main> 
   )
 }

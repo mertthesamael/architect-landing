@@ -1,0 +1,55 @@
+.projectsSlider{
+    height:100%;
+    & span{
+        height: 20px!important;
+        width: 20px!important;
+    }
+   
+    &__slide{
+        position: relative;
+        display:grid;
+        grid-template: max-content max-content / max-content max-content;
+        gap: 32px;
+        max-width: 100%;
+        width: 100%;
+        
+    }
+    &__controller{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+        position: relative;
+        & button{
+            width: 18.435rem;
+            height: 4rem;
+            background-color: #292E3D;
+            font-family: var(--workSans);
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            color: rgb(126, 123, 123);
+            transition: .5s ease;
+
+            & svg{
+                transition: .5s ease;
+                filter: brightness(0.5);
+            }
+            &:hover{
+                color: white;
+                & svg{
+                    filter: brightness(1);
+                }
+            }
+            &:nth-child(2){
+                flex-direction: row-reverse;
+                border-left: 1px solid White;
+                & svg{
+                    rotate: 180deg;
+                }
+            }
+        }
+    }
+}

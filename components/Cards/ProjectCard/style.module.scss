@@ -1,0 +1,28 @@
+@use "../../../style/variables.scss" as *;
+.projectCard{
+    width: 24rem;
+    height: 20.68rem;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    &__footer{
+        width: 100%;
+        height: 5.25rem;
+        background-color: $primary-color;
+        position: relative;
+        color: white;
+        font-family: var(--workSans);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 1rem;
+        & h1{
+            font-weight: bolder;
+            font-size: 20px;
+
+        }
+        & p{
+            font-size: 18px;
+        }
+    }
+}
