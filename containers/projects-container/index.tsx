@@ -34,6 +34,7 @@ const ProjectsSection: FC<ProjectsSectionProps> = ({}) => {
             <ul>
               {projectCategories.map((el, _i) => (
                 <li
+                key={_i}
                   onClick={(e: any) => setFilter(e.target.innerText)}
                   className={el.name === filter ? styles.active : ""}
                 >

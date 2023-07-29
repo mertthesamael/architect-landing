@@ -31,10 +31,10 @@ const ProjectsSlider: FC<ProjectsSliderProps> = ({  }) => {
     }}
     pagination={{ clickable: true }}>
       <SwiperSlide className={styles.projectsSlider__slide}> 
-      {Projects.map((el) =><ProjectCard id={el.id} name={el.name} address={el.address} img={el.img} />)}
+      {Projects.map((el, _i) =><ProjectCard key={_i} id={el.id} name={el.name} address={el.address} img={el.img} />)}
       </SwiperSlide>
       <SwiperSlide className={styles.projectsSlider__slide}> 
-      {Projects.map((el) =><ProjectCard id={el.id} name={el.name} address={el.address} img={el.img} />)}
+      {Projects.map((el, _i) =><ProjectCard key={_i} id={el.id} name={el.name} address={el.address} img={el.img} />)}
       </SwiperSlide>
         <div className={styles.projectsSlider__controller}>
         <button onClick={() => swiperRef.current.slidePrev()}>
@@ -53,8 +53,8 @@ const ProjectsSlider: FC<ProjectsSliderProps> = ({  }) => {
     navigation
  
     pagination={{ clickable: true }}>
-      {Projects.map((el) =>
-      <SwiperSlide className={styles.projectsSliderMobile__slide}> 
+      {Projects.map((el, _i) =>
+      <SwiperSlide key={_i} className={styles.projectsSliderMobile__slide}> 
       <ProjectCard id={el.id} name={el.name} address={el.address} img={el.img} />
       </SwiperSlide>
       )}

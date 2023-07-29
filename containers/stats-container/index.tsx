@@ -15,7 +15,7 @@ const StatsSection: FC<StatsSectionProps> = ({  }) => {
     <section className={styles.statsSection}>
     <div className={styles.statsSection__inner}>
         <div className={styles.statsSection__inner__cards}>
-            {Stats.map((el,_i) => <StatCard id={el.id} img={el.img} count={el.count} stat={el.stat} imgPosition={el.imgPos} />)}
+            {Stats.map((el,_i) => <StatCard key={_i} id={el.id} img={el.img} count={el.count} stat={el.stat} imgPosition={el.imgPos} />)}
         </div>
         <div className={styles.statsSection__inner__info}>
             <h1>30 Years Experience</h1>
