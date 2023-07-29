@@ -26,7 +26,7 @@ const ProjectsSection: FC<ProjectsSectionProps> = ({}) => {
   const [filter, setFilter] = useState("All");
 
   return (
-    <section className={styles.projectsSection}>
+    <section id="projects" className={styles.projectsSection}>
       <div className={styles.projectsSection__inner}>
         <div className={styles.projectsSection__inner__body}>
           <div className={styles.projectsSection__inner__filter}>

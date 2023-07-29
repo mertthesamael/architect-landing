@@ -12,10 +12,18 @@ const ContactForm: FC<ContactFormProps> = ({  }) => {
   return (
     <form className={styles.contactForm}>
         <div className={styles.contactForm__upper}>
+          <div>
             <PriamryInput placeholder='Your Name*' type='text' />
+          </div>
+          <div>
             <PriamryInput placeholder='Email*' type='text' />
+          </div>
+          <div>
             <PriamryInput placeholder='Reason for Contacting*' type='text' />
+          </div>
+          <div>
             <PriamryInput placeholder='Phone' type='text' />
+          </div>
         </div>
         <div className={styles.contactForm__bottom}>
             <PriamryInput placeholder='Message' type='textarea'/>

@@ -67,8 +67,14 @@
 
 @media (max-width:1050px) {
     .statsSection{
+        padding: 5rem 0;
+       height: max-content;
+       align-items: center;
+       display: flex;
         &__inner{
+            height: max-content;
             flex-direction: column;
+            justify-content: center;
             &__cards{
                 width: 100%;
                 display: grid;

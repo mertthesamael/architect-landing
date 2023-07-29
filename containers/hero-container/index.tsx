@@ -11,7 +11,7 @@ interface HeroSectionProps {
 
 const HeroSection: FC<HeroSectionProps> = ({  }) => {
   return (
-    <section className={styles.heroSection}>
+    <section id='home' className={styles.heroSection}>
         <Image src={hero} alt='' fill style={{objectFit:'cover'}}/>
         <div className={styles.heroSection__inner}>
             <div className={styles.heroSection__inner__title}>

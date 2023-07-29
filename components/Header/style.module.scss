@@ -4,7 +4,11 @@
     min-height: $header-height;
     background-color: white;
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    position: relative;
+    z-index: 2;
     &__inner{
         height: 100%;
         width: $page-format;
@@ -56,6 +60,38 @@
         }
         &__hamburger{
             display: none;
+        }
+    }
+    &__mobileNav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        background-color: white;
+        top: 100%;
+        overflow: hidden;
+        transition: .5s ease;
+        & nav{
+            width: $page-format;
+            height: max-content;
+            display: flex;
+            padding: 2rem 0;
+            & ul{
+
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+            & li{
+                width: 100%;
+                font-size: 1.5rem;
+                & a{
+
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+
         }
     }
 }

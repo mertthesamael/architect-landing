@@ -10,7 +10,7 @@ interface ServicesSectionProps {
 
 const ServicesSection: FC<ServicesSectionProps> = ({  }) => {
   return (
-    <section className={styles.servicesSection}>
+    <section id='services' className={styles.servicesSection}>
         <h1>Services</h1>
      <div className={styles.servicesSection__services}>
         {Services.map((el, _i) => <ServiceCard key={_i} id={el.id} title={el.title} icon={el.icon}/>)}

@@ -10,7 +10,7 @@ interface AboutSectionProps {
 
 const AboutSection: FC<AboutSectionProps> = ({  }) => {
   return (
-    <section className={styles.aboutSection}>
+    <section id='about' className={styles.aboutSection}>
         <div className={styles.aboutSection__inner}>
             <div className={styles.aboutSection__inner__img}>
                 <Image src={infoBg} alt='Info Image' fill style={{objectFit:'cover'}}/>

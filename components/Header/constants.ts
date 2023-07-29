@@ -6,26 +6,26 @@ export const NavItems = [
     {
         id:1,
         name:'Home',
-        href:'/'
+        href:'#home'
     },
     {
         id:2,
         name:'About Us',
-        href:'/'
+        href:'#about'
     },
     {
         id:3,
         name:'Projects',
-        href:'/'
+        href:'#projects'
     },
     {
         id:4,
         name:'Services',
-        href:'/'
+        href:'#services'
     },
     {
         id:5,
         name:'Contact Us',
-        href:'/'
+        href:'#contact'
     }
 ]

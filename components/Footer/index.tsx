@@ -10,7 +10,7 @@ interface FooterProps {}
 
 const Footer: FC<FooterProps> = ({}) => {
   return (
-    <footer className={styles.footer}>
+    <footer id="contact" className={styles.footer}>
       <div className={styles.footer__inner}>
         <div className={styles.footer__inner__info}>
           <div className={styles.footer__inner__info__contact}>
