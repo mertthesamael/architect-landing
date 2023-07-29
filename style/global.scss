@@ -1,2 +1,20 @@
+
 html{
+}
+@media screen and (min-width: 992px) and (max-width:1199px){
+    html{
+        font-size: 66%!important;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1599px){
+    html{
+        font-size: 82%!important;
+    }
+}
+
+@media screen and (min-width: 2200px) and (max-width:5000px){
+    html{
+        font-size: 125%!important;
+    }
 }

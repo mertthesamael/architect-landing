@@ -1,3 +1,4 @@
+"use client"
 import PrimaryButton from '@/components/Buttons/PrimaryButton';
 import styles from './style.module.scss'
 import React, { FC } from 'react'

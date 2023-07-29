@@ -14,7 +14,7 @@
     }
     &__inner{
         position: relative;
-        height: 700px;
+        height:43.75rem;
         width: $page-format;
         display: flex;
         align-items: center;
@@ -26,11 +26,11 @@
                 color: #292E3D;
                 /* Heading/1 */
                 font-family: var(--workSans);
-                font-size: 72px;
+                font-size: 4.5rem;
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
-                width: 556px;
+                width: 34.75rem;
             }
         }
 
@@ -39,8 +39,8 @@
             position: absolute;
             right: 0;
             bottom: 0;
-            width: 416px;
-            height: 210px;
+            width: 26rem;
+            height: 13.25rem;
             flex-direction: column;
             align-items: center;
             gap: 20px;

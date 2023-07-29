@@ -1,13 +1,13 @@
 .primaryButton{
-    min-height: 53px;
-    padding: 1rem 20px;
+    min-height: 3.31rem;
+    padding: 1rem 1.25rem;
     border-radius: 6px;
     border: 2px solid var(--primary, #2947A9);
     background:  #FFF;
     font-family: var(--workSans);
     text-align: center;
     color: var(--primary, #2947A9);
-    font-size: 18px;
+    font-size: 1.12rem;
     font-weight: 600;
     width: max-content;
 }

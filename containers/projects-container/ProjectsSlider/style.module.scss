@@ -1,15 +1,15 @@
 .projectsSlider{
     height:100%;
     & span{
-        height: 15px!important;
-        width: 15px!important;
+        height: 1rem!important;
+        width: 1rem!important;
     }
    
     &__slide{
         position: relative;
         display:grid;
         grid-template: max-content max-content / max-content max-content;
-        gap: 32px;
+        gap: 2rem;
         max-width: 100%;
         width: 100%;
         

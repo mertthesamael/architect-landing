@@ -1,9 +1,8 @@
-"use client"
 import Image from 'next/image'
 import styles from './style.module.scss'
 import CountUp from 'react-countup';
 
-import React, { FC,useRef } from 'react'
+import React, { FC } from 'react'
 
 interface StatCardProps {
   id:number,

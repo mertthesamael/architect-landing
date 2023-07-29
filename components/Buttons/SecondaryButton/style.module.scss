@@ -1,13 +1,13 @@
 @use "../../../style/variables.scss" as *;
 .secondaryButton{
-    min-height: 53px;
-    padding: 1rem 20px;
+    min-height: 3.31;
+    padding: 1rem 1.25rem;
     border-radius: 2px;
     background:  $primary-color;
     font-family: var(--workSans);
     text-align: center;
     color: white;
-    font-size: 18px;
+    font-size: 1.12rem;
     font-weight: 600;
     width: max-content;
 }
