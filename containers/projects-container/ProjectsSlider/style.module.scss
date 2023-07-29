@@ -47,3 +47,65 @@
         }
     }
 }
+.projectsSliderMobile{
+    height:100%;
+    height: 30rem;
+    display: none;
+    & span{
+        height: 1rem!important;
+        width: 1rem!important;
+    }
+    
+    &__slide{
+        position: relative;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        width: 100%;
+        
+    }
+    &__controller{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 8rem;
+        position: relative;
+        & button{
+        width: 18.435rem;
+        height: 4rem;
+        background-color: #292E3D;
+        font-family: var(--workSans);
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        color: white;
+        transition: .5s ease;
+        
+        & svg{
+            transition: .5s ease;
+        }
+        
+        &:nth-child(2){
+            flex-direction: row-reverse;
+            border-left: 1px solid White;
+            & svg{
+                rotate: 180deg;
+            }
+        }
+    }
+}
+}
+
+
+@media (max-width:1050px) {
+    .projectsSlider{
+        height: 20rem;
+        display: none;
+    }
+    .projectsSliderMobile{
+        display: flex;
+    }
+}

@@ -1,7 +1,10 @@
-
+@use "./variables.scss" as *;
 html{
 }
-@media screen and (min-width: 992px) and (max-width:1199px){
+body{
+}
+
+@media screen and (max-width:1199px){
     html{
         font-size: 66%!important;
     }

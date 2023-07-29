@@ -18,7 +18,6 @@
         width: $page-format;
         display: flex;
         align-items: center;
-
         &__title{
             position: relative;
             z-index: 1;
@@ -46,6 +45,34 @@
             gap: 20px;
             z-index: 1;
             background-color: $primary-color;
+        }
+    }
+}
+
+@media (max-width:1050px) {
+    .heroSection{
+        &__inner{
+
+            &__title{
+                
+                & h1{
+                    text-align: center;
+                    color: white;
+                    color: $primary-color;
+                }
+            }
+        }
+        &::after{
+            backdrop-filter: blur(3px);
+            background:none;
+            
+        }
+        &__inner{
+            padding-bottom: $header-height;
+            margin-bottom: $header-height;
+            &__featured{
+                width: 100%;
+            }
         }
     }
 }

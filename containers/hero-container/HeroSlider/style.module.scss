@@ -62,3 +62,14 @@
         }
     }
 }
+
+@media (max-width:1050px) {
+    .heroSlider{
+        &__controller{
+            height: 5rem;
+            & button{
+                height: 100%;
+            }
+        }
+    }
+}

@@ -149,3 +149,13 @@
         }
     }
 }
+
+
+@media (max-width:1500px) {
+    .footer{
+        &__inner{
+            flex-direction: column;
+            gap: 5rem;
+        }
+    }
+}

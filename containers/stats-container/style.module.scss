@@ -61,3 +61,31 @@
         }
     }
 }
+
+
+
+
+@media (max-width:1050px) {
+    .statsSection{
+        &__inner{
+            flex-direction: column;
+            &__cards{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                grid-template-rows: repeat(2, auto);
+            & div{
+                position: relative!important;
+                left: 0!important;
+                top: 0!important;
+                bottom: 0!important;
+                right: 0!important;
+            }
+            }
+            &__info{
+                width: 100%;
+            }
+        }
+
+    }
+}

@@ -25,3 +25,18 @@
         justify-content: center;
     }
 }
+
+
+@media (max-width:1050px) {
+    .contactForm{
+        width: 100%;
+        &__upper{
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            & input{
+                width: 100%;
+            }
+        }
+    }
+}

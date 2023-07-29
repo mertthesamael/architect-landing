@@ -23,5 +23,22 @@
         grid-template-columns: repeat(3, auto);   
         row-gap: 3rem;
         column-gap: 6rem;
+        &__mobile{
+            display: none;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:1050px) {
+
+    .servicesSection{
+        
+        &__services{
+            display: none;
+            &__mobile{
+                display: flex;
+            }
+        }
     }
 }

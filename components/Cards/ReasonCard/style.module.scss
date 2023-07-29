@@ -30,3 +30,11 @@
         line-height: normal;
     }
 }
+
+@media (max-width:1050px) {
+    .reasonCard{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}

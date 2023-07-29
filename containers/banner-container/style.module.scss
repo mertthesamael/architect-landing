@@ -40,3 +40,13 @@
         }
     }
 }
+
+@media (max-width:1050px) {
+  .bannerSection{
+    &__inner{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+  }
+}

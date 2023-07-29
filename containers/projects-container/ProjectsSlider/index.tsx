@@ -22,6 +22,7 @@ interface ProjectsSliderProps {
 const ProjectsSlider: FC<ProjectsSliderProps> = ({  }) => {
     const swiperRef = useRef<any>(null)
   return (
+    <div>
     <Swiper  className={styles.projectsSlider}
     modules={[Navigation, Pagination]}
     effect="fade"
@@ -44,6 +45,23 @@ const ProjectsSlider: FC<ProjectsSliderProps> = ({  }) => {
         </button>
         </div>
     </Swiper>
+
+    <Swiper  className={styles.projectsSliderMobile}
+    modules={[Navigation, Pagination]}
+    effect="fade"
+    slidesPerView={1}
+    navigation
+ 
+    pagination={{ clickable: true }}>
+      {Projects.map((el) =>
+      <SwiperSlide className={styles.projectsSliderMobile__slide}> 
+      <ProjectCard id={el.id} name={el.name} address={el.address} img={el.img} />
+      </SwiperSlide>
+      )}
+     
+
+    </Swiper>
+    </div>
   )
 }
 

@@ -1,7 +1,7 @@
 @use "../../style/variables.scss" as *;
 .header{
     width: 100%;
-    min-height: 3.75rem;
+    min-height: $header-height;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -54,5 +54,26 @@
                     
             }
         }
+        &__hamburger{
+            display: none;
+        }
     }
+}
+
+
+@media (max-width: 1050px){
+    .header{
+  
+     
+        &__inner{
+
+            &__nav{
+                display: none;
+            }
+            &__hamburger{
+                display: flex;
+            }
+        }
+    }
+
 }

@@ -1,0 +1,16 @@
+@use "../../../style/variables.scss" as *;
+.servicesSlider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 17rem;
+    width: $page-format!important;
+    &__slide{
+        width:100%!important;
+        position: relative;
+        height: max-content!important;
+        display: flex;
+        justify-content: center;
+       
+    }
+}

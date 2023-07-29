@@ -53,3 +53,13 @@
         }
     }
 }
+
+@media (max-width:750px) {
+    .statCard{
+        transform: scale(0.8);
+        transform-origin: left;
+        & img{
+            display: none;
+        }
+    }
+}
