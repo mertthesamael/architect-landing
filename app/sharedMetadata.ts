@@ -1,1 +1,1 @@
-export const openGraphImage = { images: ['https://architect-landing.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.a09cca98.png&w=48&q=75'] }
+export const openGraphImage = { images: ['https://architect-landing.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.fdf548ec.png&w=1920&q=75'] }
