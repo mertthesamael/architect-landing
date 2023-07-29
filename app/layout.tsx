@@ -4,11 +4,15 @@ import type { Metadata } from 'next'
 import { inter, workSans } from "@/libs/font"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import { openGraphImage } from "./sharedMetadata"
 
 
 export const metadata: Metadata = {
   title: 'The Box',
-  description: 'Building things is our mission',
+  description: 'Landing Page for Architect Brand | Mert Enercan',
+  openGraph:{
+    ...openGraphImage
+  }
 }
 
 export default function RootLayout({
