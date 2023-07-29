@@ -13,6 +13,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import { arrow } from "@/services/Icons/svgIcons";
 import ProjectCard from '@/components/Cards/ProjectCard';
+import { Projects } from './constants';
 
 interface ProjectsSliderProps {
   
@@ -28,18 +29,12 @@ const ProjectsSlider: FC<ProjectsSliderProps> = ({  }) => {
         swiperRef.current = swiper;
     }}
     pagination={{ clickable: true }}>
-        <SwiperSlide className={styles.projectsSlider__slide}>
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide className={styles.projectsSlider__slide}>
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-        </SwiperSlide>
+      <SwiperSlide className={styles.projectsSlider__slide}> 
+      {Projects.map((el) =><ProjectCard id={el.id} name={el.name} address={el.address} img={el.img} />)}
+      </SwiperSlide>
+      <SwiperSlide className={styles.projectsSlider__slide}> 
+      {Projects.map((el) =><ProjectCard id={el.id} name={el.name} address={el.address} img={el.img} />)}
+      </SwiperSlide>
         <div className={styles.projectsSlider__controller}>
         <button onClick={() => swiperRef.current.slidePrev()}>
           {arrow()}Back

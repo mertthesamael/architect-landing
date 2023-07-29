@@ -1,0 +1,41 @@
+.formSection{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4.75rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F8F7;
+    &__text{
+        width: 33rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        & h2{
+            color: var(--neutral-800, #292E3D);
+
+            /* Heading/4 */
+            font-family: var(--workSans);
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        & p{
+            color: var(--neutral-800, #292E3D);
+
+            /* Heading/4 */
+            font-family: var(--workSans);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    &__form{
+
+    }
+}

@@ -1,0 +1,140 @@
+@use "../../style/variables.scss" as *;
+.footer{
+    width: 100%;
+    height: max-content;
+    font-family: var(--workSans);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__inner{
+        padding: 5.31rem 0;
+    display: flex;
+        justify-content: space-between;
+        width: $page-format;
+        height: 100%;
+        &__info{
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            &__contact{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                &__item{
+                    display: flex;
+                    & span{
+                        color: $primary-color;
+                        font-size: 20px;
+                        font-weight: 500;
+                        min-width: 6.85rem;
+                    }
+                    & h3{
+                        color: #292E3D;
+                        font-size: 20px;
+                        font-weight: 400;
+                        width: max-content;
+                        
+                    }
+                }
+            }
+            &__logo{
+                display: flex;
+                gap: 14px;
+                align-items: center;
+                & h1{
+                    color: $primary-color;
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: normal;
+                    & span{
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+
+        &__newsletter{
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+
+            &__form{
+                width: 28rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                & h2{
+                    font-size: 20px;
+                    font-style: normal;
+                    color: $primary-color;
+                    font-weight: 500;
+                }
+                &__input{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    & button{
+                        padding: .7rem 20px;
+                        max-height: 100%;
+                        font-family: inherit;
+                        color: white;
+                        font-weight: 500;
+                        font-size: 18px;
+                        border-radius: 4px;
+                        background-color: $secondary-color;
+                    }
+                }
+            }
+            &__socials{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                & h2{
+                    font-size: 20px;
+                    font-style: normal;
+                    color: $primary-color;
+                    font-weight: 500;
+                }
+
+                &__icons{
+                    display: flex;
+                    gap: 20px;
+                    & svg{
+                        cursor: pointer;
+                        & path{
+                            
+                            transition: .5s ease;
+                        }
+                        &:hover{
+                            & path{
+                                fill: $secondary-color;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__banner{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem;
+        background-color: $primary-color;
+        align-items: center;
+        &__inner{
+            width: $page-format;
+            & p{
+                color: #FFF;
+                /* Caption */
+                font-family:var(--workSans);
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}

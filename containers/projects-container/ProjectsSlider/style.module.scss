@@ -1,8 +1,8 @@
 .projectsSlider{
     height:100%;
     & span{
-        height: 20px!important;
-        width: 20px!important;
+        height: 15px!important;
+        width: 15px!important;
     }
    
     &__slide{
@@ -30,19 +30,13 @@
             align-items: center;
             justify-content: center;
             gap: 1rem;
-            color: rgb(126, 123, 123);
+            color: white;
             transition: .5s ease;
 
             & svg{
                 transition: .5s ease;
-                filter: brightness(0.5);
             }
-            &:hover{
-                color: white;
-                & svg{
-                    filter: brightness(1);
-                }
-            }
+
             &:nth-child(2){
                 flex-direction: row-reverse;
                 border-left: 1px solid White;

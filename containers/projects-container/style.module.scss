@@ -13,7 +13,6 @@
         justify-content: center;
         &__title{
             position: relative;
-            bottom: 3rem;
             color: var(--neutral-800, #292E3D);
 
             /* Heading/4 */
@@ -22,6 +21,7 @@
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+
         }
         &__body{
             width: 100%;
@@ -38,6 +38,9 @@
             width: max-content;
             height: max-content;
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
             & ul{
                 display: flex;
                 flex-direction: column;
@@ -49,12 +52,28 @@
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
+                    position: relative;
+                    padding-left: 1rem;
                     cursor: pointer;
+                    transition: .2s ease;
                     &:hover{
                         color: $primary-color;
+                    }
+                    & i{
+                        position:absolute;
+                        left: 0;
+                        height: 100%;
+                        width: 5px;
+                        background-color: $primary-color;
+                        border-radius: 6px;
                     }
                 }
             }
         }
     }
+}
+
+.active{
+    font-weight: 700!important;
+    color: $primary-color!important;
 }
