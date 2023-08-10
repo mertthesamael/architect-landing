@@ -1,3 +1,6 @@
+![image](https://github.com/mertthesamael/architect-landing/assets/79616834/0e4e16c2-e731-4ad3-a51b-13d559a6b05f)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
